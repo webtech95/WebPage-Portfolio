@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="@media.css">
+</head>
+
+<body>
+    <section id="Navication_bar">
+        <nav class="navbar">
+            <!-- Toggle button -->
+            <div class="toggle-button" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="logo">
+                <img src="logo.png" alt="Logo">
+
+            </div>
+
+            <!-- Navigation links -->
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <!-- Contact button -->
+            <div class="Contact-btn">
+                <button class="Contact-Us"> Contact Us</button>
+            </div>
+        </nav>
+    </section>
+
+    <section id="Carousal">
+        <!-- Carousel -->
+        <div class="carousel">
+            <div class="carousel-slides">
+                <div class="carousel-slide">
+                    <img src="" alt="Image 1">
+                </div>
+                <div class="carousel-slide">
+                    <img src="" alt="Image 2">
+                </div>
+                <div class="carousel-slide">
+                    <img src="" alt="Image 3">
+                </div>
+            </div>
+            <button class="carousel-btn prev" onclick="prevSlide()">&#10094;</button>
+            <button class="carousel-btn next" onclick="nextSlide()">&#10095;</button>
+        </div>
+        <div class="carousel-dots">
+            <div class="carousel-dot active" onclick="goToSlide(0)"></div>
+            <div class="carousel-dot" onclick="goToSlide(1)"></div>
+            <div class="carousel-dot" onclick="goToSlide(2)"></div>
+        </div>
+    </section>
+
+    <section id="About-Me">
+        <div class="about-me-container">
+            <div class="about-image">
+              <img src="your-image.jpg" alt="Your Image">
+            </div>
+            <div class="about-details">
+              <h1>About Me</h1>
+              <p>
+                Hello! I'm [Your Name], a passionate [Your Profession/Interest]. I love working on projects that challenge my creativity and allow me to learn new skills. In my spare time, I enjoy [Your Hobbies].
+              </p>
+              <p>
+                <strong>Skills:</strong> [Skill 1], [Skill 2], [Skill 3]
+              </p>
+              <p>
+                <strong>Contact:</strong> <a href="mailto:your-email@example.com">your-email@example.com</a>
+              </p>
+            </div>
+          </div>
+    </section>
+
+    <section class="services">
+        <h1>Our Services</h1>
+        <div class="services-container">
+          <div class="service-box">
+            <div class="service-icon">💻</div>
+            <h2>Web Development</h2>
+            <p>Building responsive and functional websites.</p>
+          </div>
+          <div class="service-box"> 
+            <div class="service-icon">📱</div>
+            <h2>Mobile Apps</h2>
+            <p>Creating user-friendly mobile applications.</p>
+          </div>
+          <div class="service-box">
+            <div class="service-icon">🎨</div>
+            <h2>Graphic Design</h2>
+            <p>Designing stunning visuals and branding materials.</p>
+          </div>
+          <div class="service-box">
+            <div class="service-icon">⚙️</div>
+            <h2>SEO Optimization</h2>
+            <p>Improving search engine visibility.</p>
+          </div>
+          <div class="service-box">
+            <div class="service-icon">🔒</div>
+            <h2>Cybersecurity</h2>
+            <p>Protecting your data and systems.</p>
+          </div>
+          <div class="service-box">
+            <div class="service-icon">📈</div>
+            <h2>Data Analytics</h2>
+            <p>Providing insights through data analysis.</p>
+          </div>
+          <div class="service-box">
+            <div class="service-icon">🛠️</div>
+            <h2>Tech Support</h2>
+            <p>Resolving technical issues quickly.</p>
+          </div>
+          <div class="service-box">
+            <div class="service-icon">💡</div>
+            <h2>Consulting</h2>
+            <p>Offering expert advice for your business.</p>
+          </div>
+        </div>
+      </section>
+
+
+
+
+    <p>hello <b>world</b></p>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

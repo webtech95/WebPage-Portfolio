@@ -1,0 +1,66 @@
+@media screen and (max-width: 768px) {
+  .toggle-button {
+    display: flex;
+  }
+
+  .nav-links {
+    display: none;
+    text-align: center;
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    top: 54.7px;
+    left: 0;
+    width: 100%;
+    transition: 0.8s ease
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  .Contact-btn{
+    display: none;
+  }
+
+  /* Carousal  */
+  .carousel-slide {
+    height: 200px;
+  }
+
+  /* About Me */
+  .about-me-container {
+    flex-direction: column;
+  }
+
+  .about-image img {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .about-details {
+    text-align: center;
+  }
+
+  /* My Services */
+  
+  .services-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .service-box {
+    padding: 15px;
+  }
+
+  .service-box h2 {
+    font-size: 18px;
+  }
+
+  .service-box p {
+    font-size: 12px;
+  }
+}

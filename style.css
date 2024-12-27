@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navication_bar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    background-color: #333;
+    color: white;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.toggle-button {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.toggle-button span {
+    background: rgb(251, 251, 251);
+    height: 3px;
+    width: 25px;
+    margin: 3px 0;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.nav-links a:hover {
+    color: #ff6b00;
+    transition: 0.5s;
+}
+
+.Contact-btn .Contact-Us {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 2px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    font-size: 22px;
+}
+
+.Contact-btn .Contact-Us:hover {
+    color: white;
+    background-color: #ff6b00;
+    transition: 0.8s ease;
+    transition-property: all;
+
+}
+
+/* Carousel Container */
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    /* max-width: 800px; */
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Carousel Slides */
+.carousel-slides {
+    display: flex;
+    transition: transform 1s ease-in-out;
+}
+
+.carousel-slide {
+    min-width: 100%;
+    height: 300px;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Navigation Buttons */
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1000;
+    font-size: 18px;
+    border-radius: 50%;
+}
+
+.carousel-btn.prev {
+    left: 10px;
+}
+
+.carousel-btn.next {
+    right: 10px;
+}
+
+/* Dots for Indicators */
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.carousel-dot {
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+    border-radius: 50%;
+    background: gray;
+    cursor: pointer;
+}
+
+.carousel-dot.active {
+    background: black;
+}
+
+/* About Me */
+#About-Me {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;   
+}
+
+.about-me-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    /* overflow: hidden; */
+    /* max-width: 900px; */
+    margin: 0 auto;
+    /* flex-wrap: wrap; */
+    width: 100%;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.about-details {
+    /* flex: 1; */
+    padding: 20px;
+}
+
+.about-details h1 {
+    font-size: 24px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.about-details p {
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.about-details a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.about-details a:hover {
+    text-decoration: underline;
+}
+
+/*  My Services */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;   
+    /* color: #333; */
+    /* padding: 20px; */
+  }
+  
+  .services {
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .services h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #555;
+  }
+  
+  .services-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .service-box {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .service-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .service-icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #3498db;
+  }
+  
+  .service-box h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .service-box p {
+    font-size: 14px;
+    color: #666;
+  }
