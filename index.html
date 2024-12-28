@@ -4,135 +4,711 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Page</title>
+    <title>Home - InBio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="@media.css">
+     <link rel="stylesheet" href="@media.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 
 <body>
-    <section id="Navication_bar">
-        <nav class="navbar">
-            <!-- Toggle button -->
-            <div class="toggle-button" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="logo">
-                <img src="logo.png" alt="Logo">
-
-            </div>
-
-            <!-- Navigation links -->
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
+    <section id="header">
+        <div class="logo">
+            <img src="Images/logo-dark.png" alt="Loading">
+        </div>
+        <div class="navbar">
+            <ul class="nav">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">FEATURES</a></li>
+                <li><a href="#">PORTFOLIO</a></li>
+                <li><a href="#">RESUME</a></li>
+                <li><a href="#">TESTIMONIAL</a></li>
+                <li><a href="#">CLIENTS</a></li>
+                <li><a href="#">PRICING</a></li>
+                <li><a href="#">BLOG</a></li>
+                <li><a href="#">CONTANT</a></li>
             </ul>
-            <!-- Contact button -->
-            <div class="Contact-btn">
-                <button class="Contact-Us"> Contact Us</button>
-            </div>
-        </nav>
-    </section>
-
-    <section id="Carousal">
-        <!-- Carousel -->
-        <div class="carousel">
-            <div class="carousel-slides">
-                <div class="carousel-slide">
-                    <img src="" alt="Image 1">
-                </div>
-                <div class="carousel-slide">
-                    <img src="" alt="Image 2">
-                </div>
-                <div class="carousel-slide">
-                    <img src="" alt="Image 3">
-                </div>
-            </div>
-            <button class="carousel-btn prev" onclick="prevSlide()">&#10094;</button>
-            <button class="carousel-btn next" onclick="nextSlide()">&#10095;</button>
         </div>
-        <div class="carousel-dots">
-            <div class="carousel-dot active" onclick="goToSlide(0)"></div>
-            <div class="carousel-dot" onclick="goToSlide(1)"></div>
-            <div class="carousel-dot" onclick="goToSlide(2)"></div>
+        <div class="header-btn">
+            <button class="btn shop-btn"><img src="Images/icons8-shopping-cart-24.png" alt=""></button>
+            <button class="btn buy-btn">Buy Now</button>
         </div>
     </section>
 
-    <section id="About-Me">
-        <div class="about-me-container">
-            <div class="about-image">
-              <img src="your-image.jpg" alt="Your Image">
+    <section id="About-me">
+        <div class="About-Container">
+            <h1>WELCOME TO MY WORLD</h1>
+            <h2>Hi, I'm <b>Jone Lee</b></h2>
+            <p>
+                I use animation as a third dimension by which to simplify experiences and kuiding
+                thro each and every interaction. I’m not adding motion just to spruce things up,
+                but doing it in ways that.
+            </p>
+
+            <div id="social-icons">
+                <div class="social-icons1">
+                    <h3>FIND WITH ME</h3>
+                    <a href="https://www.facebook.com" target="_blank" title="Facebook"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com" target="_blank" title="LinkedIn"><i
+                            class="fab fa-linkedin-in"></i></a>
+                </div>
+
+                <div class="social-icons2">
+                    <h3>BEST SKILL ON</h3>
+                    <a href=""><img class="social-img1" src="Images/icons-01.png" alt=""></a>
+                    <a href=""><img class="social-img2" src="Images/icons-02.png" alt=""></a>
+                    <a href=""><img class="social-img3" src="Images/icons-03.png" alt=""></a>
+                </div>
             </div>
-            <div class="about-details">
-              <h1>About Me</h1>
-              <p>
-                Hello! I'm [Your Name], a passionate [Your Profession/Interest]. I love working on projects that challenge my creativity and allow me to learn new skills. In my spare time, I enjoy [Your Hobbies].
-              </p>
-              <p>
-                <strong>Skills:</strong> [Skill 1], [Skill 2], [Skill 3]
-              </p>
-              <p>
-                <strong>Contact:</strong> <a href="mailto:your-email@example.com">your-email@example.com</a>
-              </p>
-            </div>
-          </div>
+        </div>
+        <div class="About-Container1">
+            <div class="About-Container2"></div>
+            <img src="Images/banner-01.png" alt="">
+        </div>
     </section>
 
-    <section class="services">
-        <h1>Our Services</h1>
-        <div class="services-container">
-          <div class="service-box">
-            <div class="service-icon">💻</div>
-            <h2>Web Development</h2>
-            <p>Building responsive and functional websites.</p>
-          </div>
-          <div class="service-box"> 
-            <div class="service-icon">📱</div>
-            <h2>Mobile Apps</h2>
-            <p>Creating user-friendly mobile applications.</p>
-          </div>
-          <div class="service-box">
-            <div class="service-icon">🎨</div>
-            <h2>Graphic Design</h2>
-            <p>Designing stunning visuals and branding materials.</p>
-          </div>
-          <div class="service-box">
-            <div class="service-icon">⚙️</div>
-            <h2>SEO Optimization</h2>
-            <p>Improving search engine visibility.</p>
-          </div>
-          <div class="service-box">
-            <div class="service-icon">🔒</div>
-            <h2>Cybersecurity</h2>
-            <p>Protecting your data and systems.</p>
-          </div>
-          <div class="service-box">
-            <div class="service-icon">📈</div>
-            <h2>Data Analytics</h2>
-            <p>Providing insights through data analysis.</p>
-          </div>
-          <div class="service-box">
-            <div class="service-icon">🛠️</div>
-            <h2>Tech Support</h2>
-            <p>Resolving technical issues quickly.</p>
-          </div>
-          <div class="service-box">
-            <div class="service-icon">💡</div>
-            <h2>Consulting</h2>
-            <p>Offering expert advice for your business.</p>
-          </div>
+    <section id="Features">
+        <div class="container-features1">
+            <h4>FEATURES</h4>
+            <h1>What I Do</h1>
         </div>
-      </section>
+        <div class="container-features2">
+            <div class="container">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-align-justify">
+                    <line x1="21" y1="10" x2="3" y2="10"></line>
+                    <line x1="21" y1="6" x2="3" y2="6"></line>
+                    <line x1="21" y1="14" x2="3" y2="14"></line>
+                    <line x1="21" y1="18" x2="3" y2="18"></line>
+                </svg>
+                <h3 class="container-title">Business Stratagy</h3>
+                <p class="container-text"> I throw myself down among the tall grass by the stream as Ilie close to the
+                    earth.</p>
+                <a>&#x2192</a>
+            </div>
+            <div class="container">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-book-open">
+                    <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                    <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                </svg>
+                <h3 class="container-title">App Developmnet</h3>
+                <p class="container-text"> We’ll handle everything from to app development process until it is time to
+                    make your project live. </p>
+                <a>&#x2192</a>
+            </div>
+            <div class="container">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-tv">
+                    <rect x="2" y="7" width="20" height="15" rx="2" ry="2"></rect>
+                    <polyline points="17 2 12 7 7 2"></polyline>
+                </svg>
+                <h3 class="container-title">Business Stratagy</h3>
+                <p class="container-text"> We’ll help you optimize your business processes to maximize profitability and
+                    eliminate unnecessary costs.</p>
+                <a>&#x2192</a>
+            </div>
+            <div class="container">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-tv">
+                    <rect x="2" y="7" width="20" height="15" rx="2" ry="2"></rect>
+                    <polyline points="17 2 12 7 7 2"></polyline>
+                </svg>
+                <h3 class="container-title">Mobile App</h3>
+                <p class="container-text"> Using our expertise in mobile application development to create beautiful
+                    pixel-perfect designs.</p>
+                <a>&#x2192</a>
+            </div>
+            <div class="container">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-smartphone">
+                    <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                    <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                </svg>
+                <h3 class="container-title">SEO Optimisation</h3>
+                <p class="container-text"> Your website ranking matters. Our SEO services will help you get to the top
+                    of the ranks and stay there!</p>
+                <a>&#x2192</a>
+            </div>
+            <div class="container">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-codepen">
+                    <polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"></polygon>
+                    <line x1="12" y1="22" x2="12" y2="15.5"></line>
+                    <polyline points="22 8.5 12 15.5 2 8.5"></polyline>
+                    <polyline points="2 15.5 12 8.5 22 15.5"></polyline>
+                    <line x1="12" y1="2" x2="12" y2="8.5"></line>
+                </svg>
+                <h3 class="container-title">UX Consulting</h3>
+                <p class="container-text"> A UX consultant is responsible for many of the same tasks as a UX designer,
+                    but they typically.</p>
+                <a>&#x2192</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="Portfolio">
+        <div class="card-container1">
+            <h3>Visit my portfolio and keep your feedback</h3>
+            <h1>My Portfolio</h1>
+        </div>
+        <div class="card-container2">
+            <div class="card">
+                <div class="card-img">
+                    <a href=""><img src="Images/portfolio-large-01-800x600.jpg" alt="Card Image"></a>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">GALLERY</h3>
+                    <p class="card-text">NFT Dashboard Application Development.</p>
+
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="Images/portfolio-large-02-340x250.jpg" alt="Card Image">
+                    <a href=""></a>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">VIDEO</h3>
+                    <p class="card-text">Online Food Delivery Mobile App Design.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="Images/portfolio-large-03-340x250.jpg" alt="Card Image">
+                    <a href=""></a>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">EXTERNAL LINK</h3>
+                    <p class="card-text">Travel App Design Crrativity & Application.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="Images/portfolio-large-04-340x250.jpg" alt="Card Image">
+                    <a href=""></a>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">IMAGE</h3>
+                    <p class="card-text">Workout Website Design And Developnment.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="Images/portfolio-large-05-340x250.jpg" alt="Card Image">
+                    <a href=""></a>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">GALLERY</h3>
+                    <p class="card-text">Mobile Application Landing Page Design.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="Images/portfolio-large-06-340x250.jpg" alt="Card Image">
+                    <a href=""></a>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">STANDARD</h3>
+                    <p class="card-text">Restaurant Mobile App Figma Design.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- <i class="feather-arrow-right"> </i> -->
+
+    <!-- MY RESUME -->
+    <section id="My-Resume">
+        <div class="My-Resume-heading">
+            <h3>7+ Years of Experience</h3>
+            <h2>My Resume</h2>
+        </div>
+        <div class="navbar-resume">
+            <!-- <a href="#"><button class="nav-button active">Education</button></a>
+            <a href="#"><button class="nav-button">Professional Skills</button></a>
+            <a href="#"><button class="nav-button">Experience</button></a>
+            <a href="#"><button class="nav-button">Interview</button></a> -->
+            <button class="nav-button active">Education</button>
+            <button class="nav-button">Professional Skills</button>
+            <button class="nav-button">Experience</button>
+            <button class="nav-button">Interview</button>
+        </div>
+        <div class="child-resume">
+            <div class="child-container">
+                <h4>1998 - 2010</h4>
+                <h2>Education Quality</h2>
+                <div class="left-border">
+                    <div class="child-card">
+                        <div class="rating">3.90/4</div>
+                        <h3>BSc in Computer Science</h3>
+                        <span>University of DVI (2006 - 2010)</span>
+                        <hr>
+                        <p>The training provided by universities in order to prepare people to work in various sectors
+                            of
+                            the economy or areas of culture.</p>
+                    </div>
+                    <div class="child-card">
+                        <div class="rating">4.75/5</div>
+                        <h3>AS - Science & Information</h3>
+                        <span>SuperKing College (2001 - 2005)</span>
+                        <hr>
+                        <p>Higher education is tertiary education leading to award of an academic degree. Higher
+                            education,
+                            also called post-secondary education.</p>
+                    </div>
+                    <div class="child-card">
+                        <div class="rating">5.00/5</div>
+                        <h3>Secondary School Education</h3>
+                        <span>Kingstar Secondary School (1998 - 2000)</span>
+                        <hr>
+                        <p>Secondary education or post-primary education covers two phases on the International Standard
+                            Classification of Education scale.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="child-container">
+                <h4>2010 - 2020</h4>
+                <h2>Job Experience</h2>
+                <div class="left-border">
+                    <div class="child-card">
+                        <div class="location">USA</div>
+                        <h3>Sr. Software Engineer</h3>
+                        <span>Google Out Tech (2017 - Present)</span>
+                        <hr>
+                        <p>Google's hiring process is an important part of our culture. Googlers care deeply about their
+                            teams and the people who make them up.</p>
+                    </div>
+                    <div class="child-card">
+                        <div class="location">MALAYSIA</div>
+                        <h3>Web Developer & Trainer</h3>
+                        <span>Apple Developer Team (2012 - 2016)</span>
+                        <hr>
+                        <p>A popular destination with a growing number of highly qualified homegrown graduates, it's
+                            true
+                            that securing a role in Malaysia isn’t easy.</p>
+                    </div>
+                    <div class="child-card">
+                        <div class="location">INDIA</div>
+                        <h3>Front-end Developer</h3>
+                        <span>Nike (2020 - 2011)</span>
+                        <hr>
+                        <p>The India economy has grown strongly over recent years, having transformed itself from a
+                            producer
+                            and innovation-based economy.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- TESTIMONAL -->
+
+    <section id="Testimonial">
+        <div class="Testimonial-heading">
+            <h3>What Clients Say</h3>
+            <h2>Testimonial</h2>
+        </div>
+        <div class="carousel-container">
+            <div class="carousel">
+                <!-- Slide 1 -->
+                <div class="carousel-item">
+                    <div class="profile">
+                        <div class="profile-img">
+                            <img src="Images/Crousal img1.png" alt="Profile Picture">
+                            <a href=""></a>
+                        </div>
+                        <h4>Rainbow-themes</h4>
+                        <h1>Nevine Acotanza</h1>
+                        <p>Chief Operating Officer</p>
+                    </div>
+                    <div class="carousel-item1">
+                        <div class="carousel-controls">
+                            <button class="prev">&larr;</button>
+                            <button class="next">&rarr;</button>
+                        </div>
+                        <div class="review">
+                            <div class="rating2">★★★★☆</div>
+                            <h3> Android App Development.</h3>
+
+                            <h5> via Upwork - Mar 4, 2015 - Aug 30, 2021 test</h5>
+                            <p>
+                                Maecenas finibus nec sem ut imperdiet. Ut tincidunt est ac dolor aliquam
+                                sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris
+                                hendrerit ante. Ut tincidunt est ac dolor aliquam sodales phasellus smauris test.</p>
+
+                        </div>
+                    </div>
+                    <div class="carousel-dots"></div>
+                </div>
+                <div class="carousel-item">
+                    <div class="profile">
+                        <div class="profile-img">
+                            <img src="Images/Crousal img2.png" alt="Profile Picture">
+                            <a href=""></a>
+                        </div>
+                        <h4>Rainbow-themes</h4>
+                        <h1>Cara Delevingne</h1>
+                        <p>Chief Operating Officer</p>
+                    </div>
+                    <div class="carousel-item1">
+                        <div class="carousel-controls">
+                            <button class="prev">&larr;</button>
+                            <button class="next">&rarr;</button>
+                        </div>
+                        <div class="review">
+                            <div class="rating2">★★★★☆</div>
+                            <h3>Travel Mobile App Design.</h3>
+
+                            <h5> via Upwork - Mar 4, 2015 - Aug 30, 2021 test</h5>
+                            <p>
+                                Maecenas finibus nec sem ut imperdiet. Ut tincidunt est ac dolor aliquam
+                                sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris
+                                hendrerit ante. Ut tincidunt est ac dolor aliquam sodales phasellus smauris test.</p>
+
+                        </div>
+                    </div>
+                    <div class="carousel-dots"></div>
+                </div>
+                <div class="carousel-item">
+                    <div class="profile">
+                        <div class="profile-img">
+                            <img src="Images/Crousal img3.png" alt="Profile Picture">
+                            <a href=""></a>
+                        </div>
+                        <h4>Rainbow-themes</h4>
+                        <h1>Jone Duone Joe</h1>
+                        <p>Operating Officer</p>
+                    </div>
+                    <div class="carousel-item1">
+                        <div class="carousel-controls">
+                            <button class="prev">&larr;</button>
+                            <button class="next">&rarr;</button>
+                        </div>
+                        <div class="review">
+                            <div class="rating2">★★★★☆</div>
+                            <h3> Web App Development.</h3>
+
+                            <h5> via Upwork - Mar 4, 2015 - Aug 30, 2021 test</h5>
+                            <p>
+                                Maecenas finibus nec sem ut imperdiet. Ut tincidunt est ac dolor aliquam
+                                sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris
+                                hendrerit ante. Ut tincidunt est ac dolor aliquam sodales phasellus smauris test.</p>
+
+                        </div>
+
+                    </div>
+                    <div class="carousel-dots"></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CLIENTS -->
+
+    <section id="clients-section">
+        <div class="client-container">
+            <div class="heading">
+                <h4>Popular Clients</h4>
+                <h2>Awesome Clients</h2>
+            </div>
+            <div class="clients-content">
+                <div class="clients-categories">
+                    <ul>
+                        <li><a href="index.html.clients-grid" class="active">JavaScript</a></li>
+                        <li><a href="index.html clients-grid">Product Design</a></li>
+                        <li><a href="index.html.clients-grid">WordPress</a></li>
+                        <li><a href="index.html.clients-grid">HTML to React</a></li>
+                        <li><a href="index.html.clients-grid">React To Laravel</a></li>
+                        <li><a href="index.html.clients-grid">Python</a></li>
+                    </ul>
+                </div>
+                <div class="clients-grid">
+                    <div class="client-card">
+                        <div class="client-logo">
+                            <img src="Images/brand-01.png" alt="Client Logo">
+                        </div>
+                        <div class="top-border"></div>
+                        <div>
+                            <p>John Due</p>
+                        </div>
+                    </div>
+                    <div class="client-card">
+                        <div class="client-logo">
+                            <img src="Images/brand-02.png" alt="Client Logo">
+                        </div>
+                        <div class="top-border"></div>
+                        <div>
+                            <p>John Due</p>
+                        </div>
+                    </div>
+                    <div class="client-card">
+                        <div class="client-logo">
+                            <img src="Images/brand-03.png" alt="Client Logo">
+                        </div>
+                        <div class="top-border"></div>
+                        <div>
+                            <p>John Due</p>
+                        </div>
+                    </div>
+                    <div class="client-card">
+                        <div class="client-logo">
+                            <img src="Images/brand-02.png" alt="Client Logo">
+                        </div>
+                        <div class="top-border"></div>
+                        <div>
+                            <p>John Due</p>
+                        </div>
+                    </div>
+                    <div class="client-card">
+                        <div class="client-logo">
+                            <img src="Images/brand-02.png" alt="Client Logo">
+                        </div>
+                        <div class="top-border"></div>
+                        <div>
+                            <p>John Due</p>
+                        </div>
+                    </div>
+                    <div class="client-card">
+                        <div class="client-logo">
+                            <img src="Images/brand-03.png" alt="Client Logo">
+                        </div>
+                        <div class="top-border"></div>
+                        <div>
+                            <p>John Due</p>
+                        </div>
+                    </div>
+                    <div class="client-card">
+                        <div class="client-logo">
+                            <img src="Images/brand-02.png" alt="Client Logo">
+                        </div>
+                        <div class="top-border"></div>
+                        <div>
+                            <p>John Due</p>
+                        </div>
+                    </div>
+                    <div class="client-card">
+                        <div class="client-logo">
+                            <img src="Images/brand-02.png" alt="Client Logo">
+                        </div>
+                        <div class="top-border"></div>
+                        <div>
+                            <p>John Due</p>
+                        </div>
+                    </div>
+                    <div class="client-card">
+                        <div class="client-logo">
+                            <img src="Images/brand-09.png" alt="Client Logo">
+                        </div>
+                        <div class="top-border"></div>
+                        <div>
+                            <p>John Due</p>
+                        </div>
+                    </div>
+                    <div class="client-card">
+                        <div class="client-logo">
+                            <img src="Images/brand-02.png" alt="Client Logo">
+                        </div>
+                        <div class="top-border"></div>
+                        <div>
+                            <p>John Due</p>
+                        </div>
+                    </div>
+                    <div class="client-card">
+                        <div class="client-logo">
+                            <img src="Images/brand-011.png" alt="Client Logo">
+                        </div>
+                        <div class="top-border"></div>
+                        <div>
+                            <p>John Due</p>
+                        </div>
+                    </div>
+                    <div class="client-card">
+                        <div class="client-logo">
+                            <img src="Images/brand-12.png" alt="Client Logo">
+                        </div>
+                        <div class="top-border"></div>
+                        <div>
+                            <p>John Due</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- My Blog -->
+
+    <section id="Portfolio">
+        <div class="card-container1">
+            <h3>Visit my blog and keep your feedback</h3>
+            <h1>My Blog</h1>
+        </div>
+        <div class="card-container2">
+            <div class="card">
+                <div class="card-img">
+                    <a href=""><img src="Images/My BLog 1.jpg" alt="Card Image"></a>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">DEVELOPMENT</h3>
+                    <p class="card-text">The Best Ways to Do Market Research For Your Business Plan. </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <a href="#">
+                        <img src="Images/My BLog 2.jpg" alt="Card Image">
+                    </a>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">QUOTE</h3>
+                    <p class="card-text">The Easiest Way to Become a Successful Writer and Authors. </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+
+                    <a href="">
+                        <img src="Images/My BLog 3.jpg" alt="Card Image">
+                    </a>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">TECHNICIAN</h3>
+                    <p class="card-text">The Quickest Way to Deliver Your Message? Make It Visual. </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="My-Form">
+        <div class="form-heading">
+            <h3>Visit my blog and keep your feedback</h3>
+            <h1>My Blog</h1>
+        </div>
+        <div class="form-container">
+            <div class="left-section">
+                <img src="Images/Form Image.png" alt="Profile Picture">
+                <h3>Nevine Acotanza</h3>
+                <h4>Chief Operating Officer</h4>
+                <p>I am available for freelance work. Connect with me via email or phone.</p>
+                <h5>Phone:<a class="form-info" href="#"> +012 345 678 90</a></span>
+                    <h5>Email:<a class="form-info" href="#"> admin@example.com</a></span>
+
+                        <div class="form-link">
+                            <h4>find with me</h4>
+                            <a href="https://www.facebook.com" target="_blank" title="Facebook"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a href="https://twitter.com" target="_blank" title="Twitter"><i
+                                    class="fab fa-twitter"></i></a>
+                            <a href="https://www.linkedin.com" target="_blank" title="LinkedIn"><i
+                                    class="fab fa-linkedin-in"></i></a>
+                        </div>
+            </div>
+            <div class="right-section">
+                <form>
+                    <div class="form-flex">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="text" id="phone" name="phone">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message"></textarea>
+                    </div>
+                    <button class="form-btn" type="submit">Send Message</button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+
+    <section id="Footer">
+        <footer class="footer-child">
+            <div class="logo-section">
+                <img src="Images/Footer logo.png" alt="Profile">
+                <div class="footer-icons">
+                    <a href="https://www.facebook.com" target="_blank" title="Facebook"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com" target="_blank" title="LinkedIn"><i
+                            class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="links">
+                <div>
+                    <h3>QUICK LINK</h3>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>RESOURCES</h3>
+                    <ul>
+                        <li><a href="#">Authentication</a></li>
+                        <li><a href="#">System Status</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Over Right</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>DEVELOPERS</h3>
+                    <ul>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Authentication</a></li>
+                        <li><a href="#">API Reference</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Open Source</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+    <!-- Footer Copyroght -->
+
+    <div class="copyright">
+        © 2024. All rights reserved by <span>WebTechHub -Themes</span>
+    </div>
+
+</body>
+
+</html>
 
 
 
 
-    <p>hello <b>world</b></p>
 
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 
 </html>
