@@ -1,3 +1,15 @@
+// Header Tonggle
+
+function toggleMenu() {
+    const navbar = document.getElementById('navbar');
+    navbar.classList.toggle('active');
+}
+
+
+  
+// Carousal 
+
+
 document.addEventListener("DOMContentLoaded", () => {
     const carouselItems = document.querySelectorAll(".carousel-item");
     const prevButtons = document.querySelectorAll(".prev");
