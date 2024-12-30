@@ -186,11 +186,14 @@
 
 
   .About-Container h2,
-  .About-Container h1,
   .About-Container p {
     margin-left: 0;
     padding-top: 0;
+  }
 
+  .About-Container h1{
+    margin-top: -16px;
+    margin-left: 0;
   }
 
   #social-icons {
