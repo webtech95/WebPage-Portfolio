@@ -81,49 +81,95 @@
   }
 }
 
+
+
 /* Mobile-first design */
 
 @media (max-width: 768px) {
+
   .hamburger {
     display: block;
-    /* Show hamburger on mobile */
   }
 
-  /* .navbar {
-    display: none;
-    flex-direction: column;
-    background-color: #fff;
-    position: absolute;
-    top: 60px;
-    Adjust to match header height
-    right: 0;
-    width: 100%;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 1rem;
-  } */
+  .navbar {
+    display: block;
+  }
 
-  #navbar.active {
+  #header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #ecf0f3;
+    font-family: Poppins, sans-serif;
+    position: fixed;
+    width: 100%;
+
+  }
+
+  .hamburger {
+    font-size: 24px;
+    cursor: pointer;
     display: flex;
   }
 
-  .header-btn {
-    flex-direction: column;
-    gap: 1rem;
-    margin-top: 1rem;
+  .navbar {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    height: 100%;
+    width: 230px;
+    background-color: #ecf0f3;
+    transition: right 0.3s ease-in-out;
+    box-shadow: -3px 0 5px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    z-index: 1000;
+  }
+
+  .navbar.open {
+    left: 0;
+    top: 75px;
   }
 
   .nav {
-    flex-direction: column;
-    gap: 1rem;
+    list-style: none;
     padding: 0;
     margin: 0;
-    list-style: none;
   }
 
-  .nav li a {
+  .nav li {
+    margin-bottom: 15px;
+  }
+
+  .nav a {
     text-decoration: none;
+    font-size: 18px;
     color: #333;
-    font-size: 1rem;
+  }
+
+  .header-btn {
+    display: flex;
+    gap: 10px;
+  }
+
+  .logo img {
+    width: 100px;
+    height: auto;
+  }
+
+  .header-btn {
+    margin-right: 3px;
+    gap: 5px;
+
+  }
+
+  .shop-btn {
+    padding: 8px 10px;
+  }
+
+  .buy-btn {
+    font-size: 10px;
+    padding: 10px 12px;
   }
 
   /* About Me  */
@@ -132,14 +178,19 @@
     flex-direction: column;
   }
 
-  .About-Container h1 {
-    padding-top: 0;
-  }
-
   .About-Container {
     width: 100%;
     height: auto;
     text-align: left;
+  }
+
+
+  .About-Container h2,
+  .About-Container h1,
+  .About-Container p {
+    margin-left: 0;
+    padding-top: 0;
+
   }
 
   #social-icons {
@@ -163,13 +214,13 @@
   }
 
   .social-img1,
-  .social-img2{
+  .social-img2 {
     width: 55px;
     padding: 10px 10px;
   }
 
-  .social-img3{
-    width:65px ;
+  .social-img3 {
+    width: 65px;
   }
 
   .About-Container {
@@ -254,38 +305,68 @@
 
   /* TESTIMONAL */
 
-  .carousel-item {
+  /* .carousel-item {
     flex-direction: column;
     width: 100%;
     height: auto;
-    /* align-items: center; */
-  }
+  } */
 
   .profile-img img {
     width: 100%;
     height: auto;
+
   }
 
-  .carousel-controls {
+  .carousel-controls,
+  .review p::before,
+  .review h3::after {
     display: none;
   }
 
   .profile {
     width: 100%;
     height: auto;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .profile-img{
+    height: auto;
+  }
+  .carousel-dots {
+    left: 180px;
+    top: 0;
+  }
+
+  .carousel-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 90%;
+    height: auto;
   }
 
   .review {
     width: 100%;
     height: auto;
+    margin: 0 auto;
+    padding: 10px;
     margin-right: 200px;
-    padding: 10px 10px;
   }
 
-  .carousel-dots {
-    left: 180px;
-    top: 0;
+  .review h3{
+    font-size: 18px;
+    font-weight: bold;
   }
+
+  .review p{
+    line-height: 25px;
+    margin-top: 20px;
+
+  }
+
 
   /* CLIENTS */
 
@@ -350,103 +431,14 @@
     margin-top: 30px;
   }
 
+  .logo-section img{
+    margin: 0 0 40px;
 
+  }
 
+  /* Footer COpyRight */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Footer COpyRight */
-
-@media (max-width: 768px) {
   .copyright {
     font-size: 0.8rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .copyright {
-    font-size: 0.75rem;
   }
 }

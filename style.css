@@ -19,9 +19,12 @@ body {
     padding: 10px 20px;
     position: relative;
     z-index: 1000;
+    position: fixed;
+    width: 100%;
+    background-color: #ecf0f3;
 }
 
-.hamburger{
+.hamburger {
     display: none;
     text-decoration: none;
     z-index: 800;
@@ -103,7 +106,7 @@ ul {
 
 .header-btn {
     display: flex;
-    align-items:center ;
+    align-items: center;
     gap: 20px;
     margin: 0 10px;
 }
@@ -124,7 +127,7 @@ ul {
     padding-top: 10px;
 }
 
-.About-Container h1{
+.About-Container h1 {
     padding-top: 60px;
     font-size: 14px;
     letter-spacing: 3px;
@@ -209,7 +212,7 @@ ul {
 .About-Container1 {
     position: relative;
     z-index: 1;
-   
+
 
 
 }
@@ -961,7 +964,6 @@ ul {
     flex: 2;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    /* Decreased card size */
     gap: 20px;
 }
 
@@ -969,7 +971,6 @@ ul {
 .client-card {
     width: 100%;
     height: 200px;
-    /* Set a smaller fixed height */
     background-color: #f0f3f5;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -986,7 +987,6 @@ ul {
     align-items: center;
     justify-content: center;
     height: 50%;
-    /* Adjusted height for the logo section */
 }
 
 .client-logo img {
@@ -996,21 +996,24 @@ ul {
     object-fit: contain;
 }
 
-/* Top Border (Thin Line Below Logo) */
 .top-border {
     height: 2px;
     background-color: #e8e8e8;
     margin: 20px 0px;
 }
 
-/* Client Name Section */
 .client-card p {
     font-size: 16px;
-    /* Reduced font size */
     font-weight: 500;
     color: #3c3e41;
     margin: 15px 0;
-    /* Reduced margin*/
+}
+
+/* Blog */
+
+#Blog {
+    padding: 6% 5%;
+    border-bottom: 0.5px #dce1e4 solid;
 }
 
 /* My Form  */
@@ -1062,7 +1065,7 @@ ul {
     overflow: hidden;
 }
 
-.left-section div{
+.left-section div {
     overflow: hidden;
     border-radius: 10px;
 }
@@ -1227,7 +1230,7 @@ textarea {
 
 /* Footer */
 
-#Footer{
+#Footer {
     font-family: Poppins, sans-serif;
     padding: 3% 5%;
     border-bottom: 0.5px #dce1e4 solid;
@@ -1330,7 +1333,7 @@ textarea {
 
 /* Footer Copy-Right */
 
-.copyright{
+.copyright {
     font-size: 18px;
     color: #3c3e41;
     font-weight: 400;
@@ -1338,15 +1341,15 @@ textarea {
     padding: 40px 0;
 }
 
-.copyright span{
+.copyright span {
     position: relative;
 }
 
-.copyright span:hover{
+.copyright span:hover {
     color: #ff014f;
 }
 
-.copyright span::after{
+.copyright span::after {
     content: '';
     position: absolute;
     height: 1px;
@@ -1357,6 +1360,6 @@ textarea {
     transition: width .3s;
 }
 
-.copyright span:hover::after{
+.copyright span:hover::after {
     width: 100%;
 }
