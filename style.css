@@ -176,6 +176,7 @@ ul {
     border: 1px none solid;
     background-color: #f6f8f9;
     border-radius: 10px;
+    margin-right: 5px;
 }
 
 .social-icons2 {
@@ -789,7 +790,7 @@ ul {
     position: absolute;
     width: 130px;
     height: 130px;
-    top: 4850px;
+    top: 4800px;
     background: transparent;
     background-image: url(../Images/quote.png);
     background-size: cover;
@@ -805,7 +806,7 @@ ul {
     width: 40px;
     height: 5px;
     right: 868px;
-    top: 5040px;
+    top: 5000px;
     background: #d9dee2;
 
 }
@@ -1057,6 +1058,7 @@ ul {
 }
 
 .left-section {
+    height: auto;
     background-color: #f2f4f6;
     padding: 30px;
     text-align: left;
@@ -1132,13 +1134,14 @@ ul {
 }
 
 .form-link a {
-    font-size: 20px;
+    font-size: 30px;
     text-decoration: none;
-    padding: 20px 25px;
-    border: 1px none solid;
+    padding: 14px 18px;
     background-color: #f6f8f9;
     border-radius: 10px;
     margin-right: 10px;
+    width: 100%;
+    height: auto;
 }
 
 .form-link a:hover {
