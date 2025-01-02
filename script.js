@@ -1,39 +1,29 @@
 // Header Tonggle
 
-// function toggleMenu() {
-//     const navbar = document.getElementById('navbar');
-//     navbar.classList.toggle('active');
-// }
-
 function toggleMenu() {
     const navbar = document.getElementById('navbar');
     navbar.classList.toggle('open');
 }
 
-
-
-  
 // Carousal 
 
 
 document.addEventListener("DOMContentLoaded", () => {
+    const carousel = document.querySelector(".carousel");
     const carouselItems = document.querySelectorAll(".carousel-item");
     const prevButtons = document.querySelectorAll(".prev");
     const nextButtons = document.querySelectorAll(".next");
-    const dotsContainer = document.createElement("div");
+    const dotsContainer = document.querySelector(".carousel-dots");
     let currentIndex = 0;
     let autoSlideInterval;
 
-    // Add dots container
-    dotsContainer.classList.add("carousel-dots");
-    document.querySelector(".carousel-container").appendChild(dotsContainer);
-
-    // Create dots
+    // Create dots for navigation
     carouselItems.forEach((_, index) => {
         const dot = document.createElement("span");
         dot.classList.add("dot");
         if (index === 0) dot.classList.add("active");
         dotsContainer.appendChild(dot);
+
         dot.addEventListener("click", () => {
             currentIndex = index;
             updateCarousel();
@@ -43,10 +33,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const dots = document.querySelectorAll(".dot");
 
     function updateCarousel() {
-        carouselItems.forEach((item, index) => {
-            item.style.display = index === currentIndex ? "flex" : "none";
-            item.style.opacity = index === currentIndex ? "1" : "0";
-        });
+        // Update active slide
+        carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
 
         // Update dots
         dots.forEach((dot, index) => {
@@ -89,3 +77,9 @@ document.addEventListener("DOMContentLoaded", () => {
     // Ensure the first slide is visible
     updateCarousel();
 });
+
+
+// dots.forEach((dot, index) => {
+//     dot.classList.toggle("active", index === currentIndex);
+// });
+

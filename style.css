@@ -121,7 +121,6 @@ ul {
 }
 
 .About-Container {
-    /* text-align: left; */
     width: 100%;
     height: auto;
     padding-top: 10px;
@@ -133,6 +132,8 @@ ul {
     letter-spacing: 3px;
     color: #3c3e41;
     margin: 30px;
+    margin-left: 0;
+
 }
 
 .About-Container h2 {
@@ -140,6 +141,8 @@ ul {
     color: #1e2125;
     font-weight: bolder;
     margin: 20px;
+    margin-left: 0;
+
 }
 
 .About-Container b {
@@ -152,6 +155,8 @@ ul {
     color: #3c3e41;
     line-height: 30px;
     margin: 10px;
+    margin-left: 0;
+
 }
 
 #social-icons {
@@ -680,16 +685,23 @@ ul {
 .carousel-container {
     margin: auto;
     transition: 1.1s ease all;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 1s ease-in-out;
+    width: 100%;
 }
 
 .carousel-item {
+    flex: 0 0 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 25px;
-    opacity: 0;
     transition: opacity 0.5s ease-in-out;
-    display: none;
+    margin-bottom: 50px;
 }
 
 .carousel-item1 {
@@ -704,14 +716,13 @@ ul {
     border-radius: 20px;
     width: 395px;
     height: 455px;
-    /* overflow: hidden; */
 }
 
 .profile img {
     width: 100%;
     height: 252px;
     border-radius: 20px;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 1s ease-in-out;
 }
 
 .profile-img {
@@ -786,29 +797,29 @@ ul {
 }
 
 .review p::before {
-    content: " ";
+    content: "";
     position: absolute;
     width: 130px;
     height: 130px;
-    top: 4800px;
-    background: transparent;
-    background-image: url(../Images/quote.png);
-    background-size: cover;
-    z-index: -1;
-    opacity: 0.2;
+    top: -20px;
+    /* Adjust as needed */
+    left: 588px;
+    /* Adjust for alignment */
+    background-image: url('../Images/quote.png');
+    background-size: contain;
     background-repeat: no-repeat;
-    background-position: center center;
+    z-index: 1;
+    opacity: 0.2;
 }
 
 .review h3::after {
-    position: absolute;
     content: "";
+    display: block;
     width: 40px;
     height: 5px;
-    right: 868px;
-    top: 5000px;
+    position: relative;
+    right: 91px;
     background: #d9dee2;
-
 }
 
 .review {
@@ -854,19 +865,21 @@ ul {
 /* Dots at the bottom */
 
 .carousel-dots {
-    display: inline-flex;
+    display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 15px;
-    position: relative;
-    top: 20px;
-    left: 600px;
+    margin-top: 45px;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
 }
 
 .dot {
     width: 12px;
     height: 12px;
-    margin: 0 10px;
+    margin: 0 8px;
     background-color: #ccc;
     border-radius: 50%;
     cursor: pointer;

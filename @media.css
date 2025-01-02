@@ -133,8 +133,7 @@
 
   .social-icons1 a,
   .social-icons2 a {
-    margin-right: 10px;
-    margin-bottom: 10px;
+   padding: 15px;
   }
 
   .social-img1,
@@ -234,6 +233,7 @@
     height: auto;
   } */
 
+
   .profile-img img {
     width: 100%;
     height: auto;
@@ -258,8 +258,7 @@
   }
 
   .carousel-dots {
-    left: 143px;
-    top: 0;
+   display: none;
   }
 
   .carousel-item {
@@ -268,8 +267,9 @@
     align-items: center;
     justify-content: center;
     margin: auto;
-    width: 90%;
+    width: 100%;
     height: auto;
+    padding: 10px;
   }
 
   .review {
